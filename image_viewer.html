@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Image Viewer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="shortcut icon" href="images/favicon/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Mallanna' rel='stylesheet' type='text/css'>
+    </head>
+    
+<body>
+
+<!-- top of the page -->
+    <header>
+        <h1>VIDEO GAMES</h1>
+    </header>
+<!-- top of the page -->
+
+<!-- main section -->  
+    <div id="main">
+        <section>
+            <div id='imgView' class='imgView'><img id='imgSlide' src="images/slide1.jpg"></div>
+            <div id='imageInfo'>Image 1</div>
+            <div id='imgRow' class='imgRow'></div>
+            <div class="source">
+                <p>Image Sources&#58;<br><br><a href="http://www.wallpaperhi.com/Video_Games/Mario/video_games_mario_bros_super_mario_bullet_bill_3d_white_background_mario_galaxy_1920x1080_wallpap_100126" target="_blank">http://www.wallpaperhi.com/Video_Games/Mario/video_games_mario_bros_super_mario_bullet_bill_3d_white_background_mario_galaxy_1920x1080_wallpap_100126</a></p>
+                <p><a href="https://pixabay.com/en/mario-mushroom-video-game-turn-on-1081471/" target="_blank">https://pixabay.com/en/mario-mushroom-video-game-turn-on-1081471/</a></p>
+                <p><a href="http://do512.com/videogamesinaustin/venues" target="_blank">http://do512.com/videogamesinaustin/venues</a></p>
+                <p><a href="http://smallandsimpletruths.com/?p=1297" target="_blank">http://smallandsimpletruths.com/?p=1297</a></p>
+                <p><a href="http://wallpaperswide.com/metal_gear_solid_ground_zeroes_video_game-wallpapers.html" target="_blank">http://wallpaperswide.com/metal_gear_solid_ground_zeroes_video_game-wallpapers.html</a></p>
+            </div>
+            <ul id="canvas-link" class="canvasLink">
+                <li><a class="index" href="index.html#tween">Back to Home Page</a></li>
+                <li><a href="image_viewer_prepare.html">Back to Image Viewer Prepare</a></li>
+                <li><a href="image_viewer_modify.html">Proceed to Image Viewer Modify</a></li>
+            </ul>
+        </section>
+        <section id="content">
+            <h2 class="headcontent">THE FUTURE OF VIDEO GAMING</h2>
+            <figure id="theDivision">
+               <figcaption>
+                    Tom Clancy's&#58; The Division
+                </figcaption>
+                <a href="http://inspirationseek.com/tom-clancys-the-division-wallpapers-hd/" target="_blank"><img class="theDivision" src="images/TheDivision.jpg" alt="Tom Clancy's: The Division"/></a>
+            </figure>
+            <div class="source">
+                <p>Image Source&#58; <a href="http://inspirationseek.com/tom-clancys-the-division-wallpapers-hd/" target="_blank">http://inspirationseek.com/tom-clancys-the-division-wallpapers-hd/</a></p>
+            </div>
+            <div class="story">
+                <button id="story" onClick="toggleShowHide('hiddenText')">Click Here to show/hide the article the future of video games.</button>
+            </div>
+            <div id="hiddenText" style="display: none">
+                <h4>Article about The Future Of Video Games</h4>
+                <section>
+                <p class="content">Modern game systems represent not only quantum leaps in hardware and graphics but also the utilization of parallel data processing and memory within the Cloud. What does all that mean&#63; Simply put, it means from here on out, anyone will be able to play any game, anywhere, at any time, with amazing speed and quality. The Cloud is something that you hear a lot about these days, and there’s really two very different concepts. The first one is the one that we all sort of understand as being the Cloud. You know, &#34;I got a picture, I wanna upload it, I wanna tweet it&#34;. This is all being uploaded into the Cloud and stored on hard drives. So, think of the normal version of the Cloud as a lot of storage space. There’s another very. Very big idea which is, why not use the computers and the Cloud to give you computing power that’s far beyond what you would generally want to purchase for yourselves&#63; And what that means is that the software that you would love to experience will be running there and then the actual video or the output from the game is delivered directly to wherever you are on whatever device you’re on. There’s more processing power in the Cloud behind Xbox One than the complete processing power that was on the planet in the year 1999. We’re now able to put scenes on screen that are almost beyond lifelike in some ways. But then you have the power of the Cloud behind that box that allows us to draw upon thousands of servers to help make the box that’s in our home actually significantly more powerful than it is by itself. We can see the future of the video game industry take the step even further by introducing Virtual Reality which has been in such high demand for quite some time. Within the next year or so, we will see many companies rolling out the new consoles of Virtual Reality headsets, making another huge milestone in the video game history.</p>
+                </section>
+            </div>
+            <ul id="backhome">
+                <li><a class="index" href="index.html#tween">Back to Home Page</a></li>
+            </ul>
+        </section>
+    </div>
+<!-- main section -->
+
+<!-- footer -->
+<footer>
+   <small>&copy; 2016 William Mompie</small>
+</footer>
+<!-- footer -->
+
+<!-- script -->
+<script src="scripts/story.js"></script>
+<script src="scripts/image-viewer-slide.js"></script>
+<script src="scripts/image-viewer-row.js"></script>
+<!-- script -->
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Canvas Image</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- comments -->
+
+
+
+<canvas id="canvas" width="640" height="480"></canvas>
+<script>
+var canvas = document.getElementById('canvas').getContext ('2d');
+var canvasImage = new Image();
+
+function drawCanvasImage(){
+canvas.drawImage(canvasImage, 155, 0);
+};
+
+canvasImage.addEventListener('load',drawCanvasImage,false);
+
+canvasImage.src = 'images/satellite.png';
+</script>
+
+<ul id=canvas-link>
+    <li><a class="index" href="index.html#canvas_graphic">Back to Home Page</a></li>
+    <li><a href="canvas_graphic_modify.html">Proceed to Canvas Graphic Modify</a></li>
+    <li><a href="canvas_graphic.html">Proceed to Canvas Graphic Create</a></li>
+</ul>
+</body>

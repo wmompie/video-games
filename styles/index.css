@@ -1,0 +1,650 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, 1, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* MY STYLES */
+
+/* all content
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    font-family: 'Mallanna', sans-serif;
+}
+nav, section, article, footer, div {
+    width: 90%;
+    max-width: 1000px;
+}
+body {
+    background-image: url(../images/gameboy.png);
+    background-size: auto;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+header, #banner, #main, footer {
+    min-width: 750px;
+    max-width: 1000px;
+}
+html {
+    min-width: 310px;
+}
+/* all content */
+
+
+/* the top of the page
+*/
+header {
+    width: 81%;
+    margin: 10px auto;
+    min-width: 85%;    
+}
+h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    color: #6e4500;
+    background-color: rgba(18, 91, 166, .7);
+    border-radius: 20px;
+    width: 99%;
+    text-shadow: 0px 0px 15px #fff;
+    box-shadow: 0px 0px 15px #125ba6;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+/* the top of the page */
+
+
+/* main content section
+*/
+#main {
+    margin: 10px auto;
+    clear: both;
+    width: 80%;
+    border: 5px solid #000;
+    color: #000;
+    background-color: rgba(221, 221, 221, .85);
+    padding: 25px 0;
+    overflow: hidden;
+    min-width: 85%;
+    border-radius: 8px;
+}
+section {
+    margin: 5% auto;
+    padding-bottom: 5%;
+    border-bottom: 8px double #fff;
+    overflow: hidden;
+}
+.home section {
+    margin: .2% auto;
+    padding-bottom: .2%;
+}
+.home-left {
+    width: 35%;
+    min-width: 200px;
+    float: left;
+    display: block;
+    clear: both;
+}
+.home-left ul {
+    margin-top: -10px;
+    list-style-type: none;
+}
+.home-right {
+    width: 60%;
+    min-width: 200px;
+    float: left;
+    display: block;
+}
+.home-right img {
+    width: 60%;
+    float: left;
+}
+.home-right h2 {
+    width: 100%;
+    font-size: 25px;
+}
+.introduction {
+    border: none;
+}
+#content {
+    border-top: 8px double #fff;
+    border-bottom: none;
+}
+.introduction p, .content {
+    font-size: 22px;
+    padding: 5px 0;
+}
+img {
+    width: 30%;
+    max-width: inherit;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 10px #444;
+}
+h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 55px;
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    min-width: 70%;
+}
+.sprite {
+    width: 100%;
+}
+.sprite h2 {
+    font-family: 'Mallanna', sans-serif;
+    width: 100%;
+    font-size: 24px;
+    padding: 1px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.sprite small {
+    background-color: rgba(250, 250, 0, .4);
+    padding: 0 10px;
+}
+h3 {
+    font-size: 25px;
+    float: left;
+    margin: 10px;
+    padding: 25px 0 0 55px;
+}
+h4 {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+.headcontent {
+    float: none;
+    width: 80%;
+    padding-left: 35px;
+}
+p {
+    font-size: 20px;
+    margin: 1%;
+    padding-top: 5px;
+    clear: both;
+}
+.home h2, .home h3 {
+    float: left;
+    padding: 10px 0;
+    margin: 0;
+    clear: both;
+}
+.home p {
+    margin-left: 0;
+}
+.home img {
+    display: block;
+    float: left;
+    clear: both;
+}
+.remote, #remote {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.mario, #mario {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.smb3, #smb3 {
+    width: 85%;
+    margin-bottom: 10px;
+}
+#smb3 figcaption {
+    float: left;
+    margin-bottom: 15px;
+}
+#pacman, #theDivision {
+    width: 100%;
+}
+.pacman, .theDivision {
+    max-width: 600px;
+    width: 80%;
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+#pacman figcaption, #theDivision figcaption {
+    display: block;
+    text-align: left;
+}
+.mario3d, #mario3d {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+figcaption {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+.theDivision {
+    max-width: 400px;
+}
+ul {
+    padding: 15px;
+    float: left;
+    list-style: disc;
+    clear: both;
+}
+li {
+    color: #262626;
+    font-size: 18px;
+    width: 150px;
+    margin: 3px;
+    padding: 2px;
+    padding-right: 10px;
+    border-bottom: 1px solid #000;
+}
+li a {
+    text-decoration: none;
+}
+    /* unvisited link */
+a:link {
+    color: #000;
+}
+a:visited {
+    color: #555;
+}
+a:hover {
+    color: #0A2BA1;
+    font-weight: bold;
+}
+    /* selected link */
+a:active {
+    color: #000;
+}
+#backhome {
+    float: left;
+    list-style-type: none;
+    width: inherit;
+    margin-left: 30px;
+}
+#backhome li {
+    width: 300px;
+    list-style-type: disc;
+    color: #262626;
+}
+#backhome li a {
+    color: #000;
+}
+#backhome li a:hover {
+    color: #0A2BA1;
+    font-weight: bold;
+}
+.index {
+    font-size: 20px;
+    padding: 0 10px;
+    color: #fff;
+    width: 250px;
+}
+.index:link, .index:visited {
+    color: #fff;
+}
+.index:hover {
+    color: #0A2BA1;
+}
+#canvas-link {
+    width: 100%;
+    float: inherit;
+    text-align: center;
+    margin-bottom: -5%;
+    list-style-type: none;
+    margin-left: 2%;
+}
+#canvas-link li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 17px;
+}
+#canvas-link li a {
+    font-size: 17px;
+    color: #000;
+}
+#canvas-link:hover {
+    font-weight: normal;
+    color: #0A2BA1;
+}
+.remote:hover, .mario:hover, .smb3:hover, .pacman:hover, .mario3d:hover, .theDivision:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+canvas {
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+#canvas_modify {
+    background-color: #fff;
+    width: 100%;
+    max-width: 640px;
+}
+#canvas_modify_link {
+    float: inherit;
+    text-align: center;
+    max-width: 200px;
+    min-width: 220px;
+    background-color: #fff;
+    margin-left: 30px;
+    list-style-type: none;
+}
+#canvas_modify_link a {
+    color: #000;
+}
+#canvas_modify_link li {
+    width: 200px;
+}
+#canvas_modify_link li a:hover {
+    background-color: #45ecaa;
+    font-weight: normal;
+}
+#canvas {
+    background-image: url(../images/atari.jpg);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+    border-top: 12px double #444;
+    border-bottom: 3px solid #444;
+}
+#canvasgraphic {
+    background-color: #eee;
+    width: 100%;
+    margin: 10px auto;
+    max-width: 800px;
+    border: 2px solid #000;
+}
+#sprite-modify {
+    background-color: #000;
+    margin-top: 80px;
+    width: 100%;
+}
+#sprite {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+blockquote {
+    margin: 15px 0 15px 10px;
+    width: 25%;
+    font-size: 19px;
+    padding: 6px;
+    font-family: sans-serif;
+    border-top: 9px double #777;
+    border-bottom: 9px double #777;
+    border-right: 2px solid #777;
+    border-left: 2px solid #777;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+    min-width: 80%;
+}
+cite {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+em {
+    font-style: italic;
+}
+.gandhi, .peter {
+    text-decoration: none;
+}
+.gandhi:hover, .peter:hover {
+    color: #0A2BA1;
+    background-color: transparent;
+}
+.col-1-1, .col-1-2 {
+    width: 47%;
+    float: left;
+    padding: 1%;
+    border: none;
+}
+.col-1-1 {
+    border-right: 1px solid #222;
+}
+.col-1-2 {
+    border-left: 1px solid #222;
+}
+.col-2-1, .col-2-2, .col-2-3 {
+    width: 95%;
+    margin: 5px 0;
+    padding: 0 1%;
+    border: 1px solid #222;
+}
+.col-2-1, .col-2-2 {
+    border-bottom: none;
+}
+.sprite-modify {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 95%;
+    background-color: rgba(240, 240, 240, .9);
+    min-width: 35%;
+}
+#painting {
+    width: 100%
+}
+#toolbar {
+    width: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+#vector {
+    margin-left: 1%;
+    background-color: #eee;
+    width: 75%;
+    max-width: 640px;
+    border-radius: 100px;
+    border: 3px solid #000;
+    box-shadow: 1px 1px 45px #000;
+    margin-right: 1%;
+    float: right;
+    margin-top: 5%;
+      }
+.swatch {
+    width: 85%;
+    height: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 2px;
+    padding: 2px;
+}
+.swatch.active {
+    border: 1px solid #000;
+}
+#size-wrap {
+    float: left;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5%;
+    display: block;
+    min-width: 32px;
+}
+#size {
+    width: 95%;
+    min-width: 32px;
+}
+#colors {
+    width: 100%;
+    border-radius: 15px;
+    float: left;
+    border: 1px solid #000;
+    margin-top: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    clear: both;
+    display: block;
+}
+.graph {
+    margin: 10px auto;
+    clear: both;
+    width: 85%;
+    border: 5px solid #000;
+    color: #000;
+    background-color: rgba(221, 221, 221, .85);
+    padding: 25px 0;
+    min-width: 750px;
+    border-radius: 8px;
+}
+#graph {
+    min-width: 600px;
+}
+#story {
+    max-width: 300px;
+    min-width: 200px;
+    height: 70px;
+    box-shadow: 5px 5px 25px 5px #444;
+    display: block;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#story:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.story {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin-left: 10px;
+}
+.image-viewer {
+    background-color: rgba(240, 240, 240, .8);
+}
+div.imgView img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+div.imgView {
+    height: 250px;
+    margin: 0 0 10px 30px;
+}
+div.imgRow {
+    margin-left: 30px;
+}
+div.imgRow img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 35px;
+}
+div#imageInfo {
+    font-size: 25px;
+    font-family: 'Black Ops One', cursive;
+    color: #7a1326;
+    margin: 100px 0 10px 30px;
+}
+a {
+    cursor: pointer
+}
+#reset {
+    box-shadow: 1px 1px 35px #000;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: auto;
+    width: 80%;
+    float: right;
+    border-radius: 6px;
+}
+.source p {
+    font-size: 11px;
+    padding-top: 15px;
+}
+/* main content section */
+
+
+/* footer section
+*/
+footer {
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px 2px;
+    color: #000;
+    text-align: center;
+    background-color: #adb2dc;
+    border: 2px solid #000;
+    clear: both;
+    min-width: 85%;
+    border-radius: 5px;
+}
+small {
+    font-size: 12px;
+}
+/* footer section */

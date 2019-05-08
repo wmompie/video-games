@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Vector Drawing</title>
+<canvas id="canvas" width="640" height="480">
+The canvas element is not supported in your browser.</canvas>
+<script>
+var canvas = document.getElementById('canvas').getContext('2d');
+canvas.shadowOffsetX = 10;
+canvas.shadowOffsetY = 10;
+canvas.shadowBlur = 10;
+canvas.shadowColor = 'rgba(200, 0, 200, .3)';
+canvas.fillStyle = 'rgba(200, 0, 200, 1)';
+canvas.fillRect(0, 0, 100, 100);
+</script>
+</head>
+<body>
+    <ul id=canvas-link>
+        <li><a class="index" href="index.html#vector_drawing">Back to Home Page</a></li>
+        <li><a class="index" href="vector_drawing_modify.html">Proceed to Vector Drawing Modify</a></li>
+        <li><a class="index" href="vector_drawing.html">Proceed to Vector Drawing Create</a></li>
+    </ul>
+</body>
+</html>

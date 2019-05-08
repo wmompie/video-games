@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Recycle Animation</title>
+<style>
+#canvas {
+/* Place border on our canvas */
+border:1px solid #03F;
+}
+</style>
+<script>
+// canvas and context variables for drawing
+var canvas;
+var context;
+// Image holder for our animation
+var spriteRecycle = new Image();
+// Sprite image frame variables
+var sliceX = 0;
+var sliceY = 0;
+var sliceWidth = 96;
+var sliceHeight = 96;
+// animation variable
+var intervalRef;
+// initialize the canvas
+function init() {
+// Set the button handlers
+var btnStart = document.getElementById('start');
+var btnStop = document.getElementById('stop');
+btnStart.addEventListener('click',startAnimation,false);
+btnStop.addEventListener('click',stopAnimation,false);
+// Retrieve reference to the canvas and context
+canvas = document.getElementById('canvas');
+context = canvas.getContext('2d');
+// Assign the source of our image
+spriteRecycle.src = 'images/recycle.png';
+}
+// Animate image based on slice
+function animateSprite() {// Draw the image based on the current sprite slice
+context.drawImage(spriteRecycle, sliceX, sliceY, sliceWidth, sliceHeight, 0, 0, 96, 96);
+// Increment the slice of the sprite
+sliceX+=96;
+// Reset the slice to the first frame if needed
+if (sliceX>=spriteRecycle.width) {
+sliceX = 0;
+}
+}
+// Start the animation by setting an interval
+function startAnimation() {
+intervalRef = setInterval('animateSprite()',96);
+}
+// Stop the animation by clearing the interval set
+function stopAnimation() {
+clearInterval(intervalRef);
+// erase the canvas with clearRect
+context.clearRect(0,0,96,96);
+}
+// call the init function on page load
+window.addEventListener('load',init,false);
+</script>
+</head>
+<body>
+<h1>Sprite Map Animation with Canvas</h1>
+<canvas id="canvas" width="96" height="96">
+The Canvas element is not supported in this browser.
+</canvas>
+<br>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<br><br>
+<ul id="canvas-link">
+    <li><a class="index" href="index.html#sprite_animation">Back to Home Page</a></li>
+    <li><a href="sprite_animation_modify.html">Proceed to Sprite Animation Modify</a></li>
+    <li><a href="sprite_animation.html">Proceed to Sprite Animation Create</a></li>
+</ul>
+</body>
+</html>

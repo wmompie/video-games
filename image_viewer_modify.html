@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Image Viewer</title>
+<link rel="stylesheet" href="styles/index.css" />
+</head>
+<style>
+    div.imgView { height: 300px; }
+    div.imgView img { height: 300px; }
+    div.imgRow img { height: 100px; }
+    a { cursor: pointer }
+</style>
+<body>
+<!-- comments -->
+
+
+<div class="image-viewer">
+    
+    <!-- image view and title - set to first image -->
+    <div id='imgView' class='imgView'><img id='imgSlide' src="images/slide1.jpg" style='height:300px'></div>
+    <div id='imageInfo'>Image 1</div>
+    <!-- thumbnail image row -->
+    <div id='imgRow' class='imgRow'></div>
+    
+    <!-- history state display area - set to first image (page when loaded)-->
+    <div id='stateInfo'>Image 1</div>
+    
+    
+    <ul id="canvas-link">
+        <li><a class="index" href="index.html#tween">Back to Home Page</a></li>
+        <li><a href="image_viewer_prepare.html">Back to Image Viewer Prepare</a></li>
+        <li><a href="image_viewer.html">Proceed to Image Viewer Create</a></li>
+    </ul>
+</div>
+               
+<script src="scripts/image-viewer-modify.js"></script>
+<script src="scripts/image-viewer-modify-two.js"></script>
+
+</body>
+</html>

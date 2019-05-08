@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Canvas Text</title>
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="shortcut icon" href="images/favicon/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Mallanna' rel='stylesheet' type='text/css'>
+        <script>
+            var canvas;
+            var context;
+
+            function showText() {
+                // Get references to the canvas and then the drawing context
+                canvas = document.getElementById('canvas_modify');
+                context = canvas.getContext('2d');
+
+                var canvas = document.getElementById('canvas_modify').getContext('2d');
+                context.font = '80px Black Ops One';
+                context.fillStyle = 'black';
+                context.fillText('Video Games', 10,100);
+                context.fillStyle = '#45ecaa';
+                context.fillText('Video Games', 20, 90);
+                
+                context.font = '40px Mallanna';
+                context.strokeStyle = 'black';
+                context.lineWidth = 1;
+                context.fillStyle = '#45ecaa';
+                context.fillText('47% are Females', 350, 200);
+                context.strokeText('47% are Females', 350, 200);
+                context.fillText('49% have consoles', 5, 200);
+                context.strokeText('49% have consoles', 5, 200);
+                context.textAlign = 'center';
+                context.fillText('Averages for Video Gamers', 320, 150);
+                context.strokeText('Averages for Video Gamers', 320, 150);
+                context.fillText('The average age of purchasers are 35', 320, 230);
+                context.strokeText('The average age of purchasers are 35', 320, 230);
+            }
+            window.addEventListener('load',showText,false);
+        </script>
+</head>
+<body>
+    <canvas id="canvas_modify" width="640" height="300">Your browser does not support HTML5 Canvas.</canvas>
+        <ul id="canvas_modify_link">
+            <li><a class="index" href="index.html#canvas_text">Back to Home Page</a></li>
+            <li><a href="canvas_text_prepare.html">Back to Canvas Text Prepare</a></li>
+            <li><a href="canvas_text.html">Proceed to Canvas Text Create</a></li>
+        </ul>
+</body>
+</html>
